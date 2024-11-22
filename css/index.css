@@ -1,0 +1,57 @@
+.tooltip-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+}
+.nav-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+.separator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.separator{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: black;
+}
+.tooltip-content{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.tooltip-triangle{
+    border-top:7px solid black;
+    border-left:7px transparent solid;
+    border-right:7px transparent solid;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.nav-div:hover .tooltip-content{
+    visibility: visible;
+    opacity: 1;
+}
+.nav-div:hover .tooltip-triangle{
+    visibility: visible;
+    opacity: 1;
+}
